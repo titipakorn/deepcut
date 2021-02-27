@@ -106,7 +106,7 @@ The file can be placed as an `custom_dict` argument in `tokenize` function e.g.
 
 ```python
 deepcut.tokenize('ตัดคำได้ดีมาก', custom_dict='/path/to/custom_dict.txt')
-deepcut.tokenize('ตัดคำได้ดีมาก', custom_dict=['ดีมาก','#([01]\d|2[0-3]):?([0-5]\d)']) # alternatively, you can provide a list of custom dictionary and regular expression with '#' in front
+deepcut.tokenize('ตัดคำได้ดีมาก', custom_dict=['ดีมาก','#([01]\d|2[0-3]):?([0-5]\d)']) # alternatively, you can provide a list of custom dictionary and regular expression
 ```
 
 ## Notes

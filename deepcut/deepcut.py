@@ -49,9 +49,7 @@ def tokenize(text, custom_dict=None):
 
 
 def _custom_dict(word, text, word_end):
-    if(word[0]=="#"):
-        word=word[1:]
-    # word_length = len(word)
+    
     initial_loc = 0
 
     while True:
