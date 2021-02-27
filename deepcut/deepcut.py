@@ -49,12 +49,16 @@ def tokenize(text, custom_dict=None):
 
 
 def _custom_dict(word, text, word_end):
-    word_length = len(word)
+    if(word[0]=="#"):
+        word=word[1:]
+    # word_length = len(word)
     initial_loc = 0
 
     while True:
         try:
-            start_char = re.search(word, text).start()
+            search_term = re.search(word, text)
+            start_char = search_term.start()
+            word_length = search_term.end() - start_char
             first_char = start_char + initial_loc
             last_char = first_char + word_length - 1
 
